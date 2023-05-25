@@ -2,26 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.btn-gradient{
+  background-image: linear-gradient(45deg,#fe6b8b 30%,#ff8e53 90%);
+ 
+  background-position: 0 100%;
+  background-size: auto 200%;
+  
+  
+}
+.home {
+  background-image: url(../../public/fire-demon.e9fcee96.png),url(../../public/characters-background.446a4ad8.png),url(../../public/features-background.a30f03ad.png),linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url(../../public/home-background.972a4958.png);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment: scroll,scroll,scroll,scroll,fixed;
+  background-size: auto,auto,auto,100% 100%,100% 100%;
+  background-position: top -600px center,top 1100px center,top 2550px center,top,50%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+
+.divider {
+  height: 1px;
+  background-image: linear-gradient(90deg,rgba(255,239,160,0),#fff0a5,rgba(255,239,160,0));
+ 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.footer__biswap {
+  background-image: linear-gradient(90deg,#1180ef,#217ae4,#3075d9,#406fce,#506ac2,#6064b7,#6f5fac,#7f59a1,#8f5396,#9e4e8b,#ae4880,#be4374,#ce3d69,#dd385e,#ed3253);
+}
+
+.progress-bar {
+  background-image: linear-gradient(20deg,#28cfff,#b5f5b8 90%,#fff);
+}
+.content-divider {
+
+  background: linear-gradient(90deg,#2a2935,#e8db9a 22.35%,#e8db9a 73.18%,#2a2935);
+}
+
+.heading-font {
+  font-size: 36px;
+  font-family: "American Captain",sans-serif;
+  font-weight: 400;
+  line-height: 51.48px;
+  letter-spacing: .018em;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+.font-americanCapitan{
+  font-family: "American Captain",sans-serif;
+
+}
+.part {
+  padding: 8px 5px;
+  margin-top: 8px;
+  background: linear-gradient(90deg,#3a3a3a,rgba(54,54,54,0));
+  border-radius: 10px;
+}
+.heroClass {
+ 
+  background: linear-gradient(1turn,#ffc904,rgba(255,201,4,0));
+  background-position: bottom;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: .018em;
+}
+.custom-bounce {
+  animation-duration: 5s; /* Change this value to adjust the animation speed */
 }

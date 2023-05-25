@@ -42,7 +42,7 @@ function Home() {
                             >
                             <Image src={homeIntroRightframe} alt="" className='w-full h-full'/>
                             <iframe  className="absolute  top-2   w-[98%] lg:w-[91%] h-[96%]"  src="https://www.youtube.com/embed/B5W2v_Tj1CE"
-                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                                frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
                                 allowfullscreen title="Embedded youtube">
                             </iframe>
 

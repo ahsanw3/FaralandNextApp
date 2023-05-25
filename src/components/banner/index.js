@@ -14,7 +14,7 @@ function Banner() {
   return (
     <div className='h-[500px] lg:h-[800px] relative'
       style={{
-        background: `url(${bg})`,
+        background: `url(${bg.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}>
